@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="index.js" type="text/javascript"defer></script>
+	<title>Форма или типа того</title>
+</head>
+<body>
+	<form>
+		<h4>Введите имя:</h4>
+		<input id="name" type="text" alt="name" placeholder="Имя" required/>
+		<h4>Введите почту:</h4>
+      <input id="email" type="e-mail" alt="E-mail" placeholder="E-mail" required/>
+		<h4>Введите номер телефона:</h4>
+		<input type="tel" id="phone" name="phone"
+		pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{4}"
+		required>
+
+		<div>
+			<h3>Да или нет?</h3>
+			<div class="options__item">
+				<input id="yes" checked type="radio" value="yes" name="yesorno">
+				<label class="button" for="yes"><span>Да</span></label>
+			</div>
+	
+			<div class="options__item">
+				<input id="no" type="radio" value="no" name="yesorno">
+				<label class = "button" for="no"><span>Нет</span></label>
+			</div>
+
+			<div class="checkbox">
+				<h2>Выберите ваши любимые цифры:</h2>
+				<ul>
+					<li>
+						<input id="digitsInput" type="checkbox" name="digits">
+						<label for="one"><span>0</a></span></label>
+					</li>
+					<li>
+						<input id="digitsInput" type="checkbox" name="digits">
+						<label for="one"><span>1</a></span></label>
+					</li>
+					<li>
+						<input id="digitsInput" type="checkbox" name="digits">
+						<label for="one"><span>2</a></span></label>
+					</li>
+					<li>
+						<input id="digitsInput" type="checkbox" name="digits">
+						<label for="one"><span>3</a></span></label>
+					</li>
+					<li>
+						<input id="digitsInput" type="checkbox" name="digits">
+						<label for="one"><span>4</a></span></label>
+					</li>
+					<li>
+						<input id="digitsInput" type="checkbox" name="digits">
+						<label for="one"><span>5</a></span></label>
+					</li>
+					<li>
+						<input id="digitsInput" type="checkbox" name="digits">
+						<label for="one"><span>6</a></span></label>
+					</li>
+					<li>
+						<input id="digitsInput" type="checkbox" name="digits">
+						<label for="one"><span>7</a></span></label>
+					</li>
+					<li>
+						<input id="digitsInput" type="checkbox" name="digits">
+						<label for="one"><span>8</a></span></label>
+					</li>
+					<li>
+						<input id="digitsInput" type="checkbox" name="digits">
+						<label for="one"><span>9</a></span></label>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+
+		<input type="submit" value="Отправить данные" onclick="SendMessage()" />
+	</form>
+</body>
+</html>

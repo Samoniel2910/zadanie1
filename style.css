@@ -1,0 +1,6 @@
+input:hover, .button:hover{
+   cursor: pointer;
+}
+ul{
+   list-style-type: none;
+}
